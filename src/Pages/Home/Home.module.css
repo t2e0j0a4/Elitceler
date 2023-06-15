@@ -1,1 +1,358 @@
 @import "/src/index.css";
+
+.app__home {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+/* Section 1 : Hero Section */
+
+.home__section1 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    height: 100%;
+    background-color: #FAFAFF;
+}
+
+.section1__side1 {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+.section1__side1 h1 {
+    width: 100%;
+    margin: auto;
+    font-size: 36px;
+    line-height: 52px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+
+.section1__side1 p {
+    width: 100%;
+    margin: auto;
+    font-family: var(--quicksand);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.section1__side1 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EA680B;
+    border-radius: 4px;
+    font-family: var(--quicksand);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    cursor: pointer;
+    padding: 16px 24px;
+    line-height: 19px;
+}
+
+.section1__side2 {
+    width: 40%;
+}
+
+.section1__side2 img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Section 1 : Hero Section */
+
+/* Section 2 : About Us */
+
+.home__section2 {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.section2__side1 {
+    width: 50%;
+    padding: 20px;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+.side1__icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ECE9FB;
+    border-radius: 4px;
+}
+
+.side1__icon ion-icon {
+    font-size: 36px;
+    color: #EA680B;
+}
+
+.side1__head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+}
+
+.side1__head h2 {
+    font-family: var(--mulish);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #3B3951;
+}
+
+.side1__head p {
+    font-family: var(--quicksand);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    color: #8D8BAC;
+}
+
+.section2__side1 > p {
+    font-family: var(--quicksand);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.section2__side2 {
+    order: 1;
+    width: 40%;
+}
+
+.section2__side2 img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Section 2 : About Us */
+
+/* Section 3 : Why Us? */
+
+.home__section3 {
+    width: 100%;
+    max-width: 100%;
+    background-color: #FAFAFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+.home__section3 h2 {
+    text-align: center;
+    font-family: var(--mulish);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #3B3951;
+}
+
+.home__section3 p:nth-child(2) {
+    font-family: var(--quicksand);
+    font-style: normal;
+    text-align: center;
+    width: 50%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #8D8BAC;
+}
+
+.home__section3 p:nth-child(3) {
+    font-family: var(--quicksand);
+    font-style: normal;
+    text-align: center;
+    width: 50%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #8D8BAC;
+}
+
+.home__section3 p span {
+    font-weight: 700;
+    font-size: 17px;
+    color: #8D8BAC;
+}
+
+/* Section 3 : Why Us? */
+
+/* ****************************************************** */
+
+/* Responsive Media Queries */
+
+@media all and (max-width : 900px) {
+
+    /* Section 1 : Hero Section & Section 2 : About Us */
+
+    .home__section1, .home__section2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section1__side1, .section1__side2, .section2__side1, .section2__side2 {
+        width: 90%;
+    }
+
+    .section1__side1 h1 {
+        font-size: 32px;
+    }
+
+    .section1__side2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section1__side2 img {
+        width: 80%;
+    }
+
+    .section2__side1 {
+        order: 1;
+    }
+
+    .section2__side2 {
+        order: 2;
+    }
+
+    /* Section 1 : Hero Section & Section 2 : About Us */
+
+    /* Section 3 : Why Us? */
+
+    .home__section3 p:nth-child(n) {
+        width: 80%;
+    }
+
+    /* Section 3 : Why Us? */
+
+}
+
+@media all and (max-width : 500px) {
+
+    /* Section 1 : Hero Section & Section 2 : About Us */
+
+    .home__section1, .home__section2 {
+        padding: 1rem;
+    }
+    
+    .section1__side1, .section1__side2, .section2__side1, .section2__side2 {
+        width: 100%;
+    }
+
+    .section1__side1, .section2__side1 {
+        padding: 8px;
+    }
+
+    .section1__side2 img, .section2__side2 img {
+        width: 100%;
+    }
+
+    /* Section 1 : Hero Section & Section 2 : About Us */
+
+    /* Section 3 : Why Us? */
+
+    .home__section3 p:nth-child(n) {
+        width: 90%;
+    }
+
+    /* Section 3 : Why Us? */
+
+}
+
+@media all and (max-width : 400px) {
+
+    /* Section 1 : Hero Section & Section 2 : About Us */
+    
+    .home__section1, .home__section2 {
+        padding: 0.8rem;
+        gap: 2.5rem;
+    }
+    
+    .section1__side1 {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section1__side1 h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 26px;
+        line-height: 40px;
+    }
+    
+    .section1__side1 p {
+        width: 100%;
+        text-align: center;
+        line-height: 24px;
+        font-size: 16px;
+    }
+
+    .section2__side1 {
+        padding: 0;
+    }
+
+    .section2__side1 > p {
+        font-size: 14px;
+    }
+    
+    /* Section 1 : Hero Section & Section 2 : About Us */
+
+    /* Section 3 : Why Us? */
+
+    .home__section3 p:nth-child(n) {
+        width: 98%;
+    }
+
+    /* Section 3 : Why Us? */
+
+}

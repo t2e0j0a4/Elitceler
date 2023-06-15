@@ -27,3 +27,11 @@ a {
     height: 100%;
     background: #FFFFFF;
 }
+
+.main__center {
+    width: 1400px;
+    max-width: 100%;
+    margin: auto;
+    padding-top: 76px;
+    min-height: 100vh;
+}

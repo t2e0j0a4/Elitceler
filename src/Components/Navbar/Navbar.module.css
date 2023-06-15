@@ -6,6 +6,8 @@
     height: 76px;
     background-color: #22262A;
     box-shadow: 0px 1px 2px rgba(241, 239, 239, 0.05);
+    position: fixed;
+    z-index: 999;
 }
 
 .navbar__center {
@@ -44,7 +46,7 @@
 }
 
 .list__item a {
-    font-family: 'Quicksand';
+    font-family: var(--quicksand);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -72,9 +74,6 @@
 }
 
 @media all and (max-width : 710px) {
-    .app__navbar {
-        position: relative;
-    }
 
     .navbar__list {
         position: absolute;

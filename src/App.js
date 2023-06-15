@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 import {Routes, Route, useLocation} from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
-import Footer from "./Components/Footer/Footer";
 import {Home, Team, Blogs, Blog, NotFound, Projects} from "./Pages";
 
 const App = () => {
@@ -34,7 +33,7 @@ const App = () => {
           <Route exact path='/projects' element={<Projects/>}/>
         </Routes>
       </div>
-      <Footer/>
+      {/* Footer */}
     </div>
   )
 }
