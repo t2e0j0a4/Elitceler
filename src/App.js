@@ -1,10 +1,26 @@
-import React from 'react'
-import {Routes, Route} from "react-router-dom";
+import React, {useEffect} from 'react'
+import {Routes, Route, useLocation} from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import {Home, Team, Blogs, Blog, NotFound, Projects} from "./Pages";
 
 const App = () => {
+
+   let location = useLocation();
+  
+  // Function to make Captialize Words.
+  const makeWordCaptialize = (word) => {
+    let wordBreakage = word.split('');
+    wordBreakage[0] = wordBreakage[0].toLocaleUpperCase();
+    return wordBreakage.join('');
+  }
+
+  useEffect(() => {
+    let currentPageName = location.pathname.replace('/', '');
+    document.title = currentPageName ? `ElitCeler | ${makeWordCaptialize(currentPageName)}` : 'ElitCeler | Building Tech Everywhere!';
+    window.scrollTo({top : 0, behavior : 'smooth'});
+  }, [location]);
+
   return (
     <div className='app'>
       <Navbar/>
