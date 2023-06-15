@@ -1,1 +1,132 @@
 @import "/src/index.css";
+
+.app__navbar {
+    width: 100%;
+    max-width: 100%;
+    height: 76px;
+    background-color: #22262A;
+    box-shadow: 0px 1px 2px rgba(241, 239, 239, 0.05);
+}
+
+.navbar__center {
+    width: 1400px;
+    max-width: 100%;
+    height: 100%;
+    padding: 0 28px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar__logo {
+    width: 100px;
+}
+
+.navbar__logo img {
+    width: 80%;
+    object-fit: contain;
+}
+
+.navbar__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.list__item {
+    list-style-type: none;
+}
+
+.list__item a {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    transition: color 0.2s ease;
+}
+
+.list__item a:hover {
+    color: #EA680B;
+}
+
+.list__item a.selected {
+    color: #EA680B;
+}
+
+.menu__smallscreen {
+    display: none;
+}
+
+@media all and (max-width : 1200px) {
+    .navbar__center {
+        padding: 0 28px;
+    }
+}
+
+@media all and (max-width : 710px) {
+    .app__navbar {
+        position: relative;
+    }
+
+    .navbar__list {
+        position: absolute;
+        background-color: #22262A;
+        width: 100%;
+        height: 0;
+        overflow-y: hidden;
+        left: 0;
+        top: 76px;
+        z-index: -1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 28px;
+        gap: 1.2rem;
+        transition: all 0.4s linear;
+    }
+    
+    .navbar__list::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    
+    .navbar__list.active {
+        height: 50vh;
+        z-index: 9999;
+        overflow-y: auto;
+        padding-top: 24px;
+    }
+
+    .menu__smallscreen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu__smallscreen button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: #FFFFFF;
+    }
+
+    .menu__smallscreen button ion-icon {
+        font-size: 28px;
+        transition: color 0.2s linear;
+    }
+
+    .menu__smallscreen button.icon__color {
+        color: #EA680B;
+    }
+
+}
