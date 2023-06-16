@@ -9,9 +9,21 @@
 
 /* Section 1 : Hero Section */
 
-.home__section1 {
-    width: 100%;
+.section1__out, .section3__out, .section4__out, .section5__out, .section7__out {
+    background-color: #FAFAFF;
+}
+
+.section2__out, .section6__out {
+    background-color: #FFFFFF;
+}
+
+.home__sections {
+    width: 1400px;
+    max-width: 100%;
     margin: auto;
+}
+
+.home__section1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -19,7 +31,6 @@
     gap: 2rem;
     padding: 2rem 1rem;
     height: 100%;
-    background-color: #FAFAFF;
 }
 
 .section1__side1 {
@@ -86,7 +97,6 @@
 /* Section 2 : About Us */
 
 .home__section2 {
-    width: 100%;
     margin: 20px auto;
     display: flex;
     flex-direction: row;
@@ -95,7 +105,6 @@
     gap: 2rem;
     padding: 2rem 1rem;
     height: 100%;
-    background-color: #FFFFFF;
 }
 
 .section2__side1 {
@@ -173,15 +182,12 @@
 /* Section 3 : Why Us? */
 
 .home__section3 {
-    width: 100%;
-    max-width: 100%;
-    background-color: #FAFAFF;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 1rem;
-    padding: 2rem 1rem;
+    padding: 76px 1rem 2rem 1rem;
 }
 
 .home__section3 h2 {
@@ -209,7 +215,6 @@
     font-family: var(--quicksand);
     font-style: normal;
     text-align: center;
-    width: 50%;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -224,10 +229,455 @@
 
 /* Section 3 : Why Us? */
 
+/* Section 4 : Why Us Depth */
+
+.home__section4 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 1rem 4rem 1rem;
+    height: 100%;
+}
+
+.section4__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem 1.2rem;
+}
+
+.whyus__box {
+    background: rgba(255, 255, 255, 0.002);
+    box-shadow: 0px 3px 12px rgba(6, 10, 45, 0.06);
+    border-radius: 4px;
+    padding: 1.6rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: #FFFFFF;
+    transition: background-color 0.3s ease;
+}
+
+.whyus__box:nth-child(2n+1) {
+    transform: translateY(28px);
+}
+
+.whyusbox__icon {
+    width: 60px;
+    height: 60px;
+    background: #ECE9FB;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.whyusbox__icon ion-icon {
+    font-size: 28px;
+    color: #EA680B;
+    transition: color 0.3s ease;
+}
+
+.whyus__box h3 {    
+    font-family: var(--mulish);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #3B3951;
+    line-height: 24px;
+    text-align: center;
+}
+
+.whyus__box p {
+    width: 70%;
+    text-align: center;
+    font-family: var(--quicksand);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 27px;
+    color: #8D8BAC;
+}
+
+.whyus__box:hover {
+    background-color: #EA680B;
+}
+
+.whyus__box:hover > h3 , .whyus__box:hover > p {
+    color: #FFF;
+}
+
+.whyus__box:hover .whyusbox__icon {
+    background-color: hsla(0, 0%, 100%, 0.15);
+    box-shadow: 0 0 0 8px hsla(0, 0%, 100%, 0.05);
+}
+
+.whyus__box:hover .whyusbox__icon ion-icon {
+    color: #fff;
+}
+
+/* Section 4 : Why Us Depth */
+
+/* Section 5 : Tech Partners */
+
+.home__section5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 1rem;
+    height: 100%;
+}
+
+.home__section5 h2 {
+    width: 100%;
+    font-family: var(--mulish);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #3B3951;
+}
+
+.section5__data {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 10px auto;
+}
+
+.tech__box {
+    width: 220px;
+    height: 150px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.002);
+    box-shadow: 0px 3px 12px rgba(6, 10, 45, 0.209);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.tech__box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Section 5 : Tech Partners */
+
+/* Section 6 : Technologies */
+
+.home__section6 {
+    padding: 3rem 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.section6__head {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.section6__head h2 {
+    width: 100%;
+    font-family: var(--mulish);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #3B3951;
+}
+
+.section6__head p {
+    width: 60%;
+    text-align: center;
+    font-family: var(--quicksand);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: #8D8BAC;
+}
+
+.section6__data {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin: 12px auto;
+    padding-top: 12px;
+}
+
+.techno__box {
+    width: 100px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    background: rgba(255, 255, 255, 0.002);
+    box-shadow: 0px 3px 12px rgba(6, 10, 45, 0.06);
+    border-radius: 4px;
+    transition: all 0.2s linear;
+}
+
+.techno__box ion-icon {
+    color: #EA680B;
+    background-color: #FAFAFF;
+    padding: 8px;
+    font-size: 24px;
+    border-radius: 50px;
+}
+
+.techno__box p {
+    font-family: var(--mulish);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #3B3951;
+}
+
+.techno__box:hover {
+    background-color: #EA680B;
+}
+
+.techno__box:hover > ion-icon {
+    color: #FFFFFF;
+    transition: all 0.2s linear;
+    background-color: hsla(0, 0%, 100%, 0.15);
+    box-shadow: 0 0 0 8px hsla(0, 0%, 100%, 0.05);
+}
+
+.techno__box:hover > p {
+    color: #FFFFFF;
+    transition: all 0.2s linear;
+}
+
+/* Section 6 : Technologies */
+
+/* Section 7 : Contact Us */
+
+.home__section7 {
+    padding: 3rem 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.section7__head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.section7__head h2 {
+    font-family: var(--mulish);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #3B3951;
+}
+
+.section7__head p {
+    text-align: center;
+    font-family: var(--quicksand);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #8D8BAC;
+}
+
+.section7__data {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 20px auto;
+}
+
+.contact__box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.6rem;
+}
+
+.main__inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.6rem;
+    width: 90%;
+}
+
+.detail__input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.4rem;
+}
+
+.detail__input label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: var(--quicksand);
+    color: #3B3951;
+}
+
+.detail__input input {
+    width: 100%;
+    border: 1px solid rgba(158, 157, 185, 0.3);
+    border-radius: 4px;
+    outline: none;
+    padding: 10px 12px;
+    background-color: transparent;
+    font-family: var(--quicksand);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.detail__input input:focus {
+    outline: 1px solid #3B3951;
+}
+
+.message__input {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.message__input textarea {
+    width: 90%;
+    resize: vertical;
+    height: 120px;
+    outline: none;
+    border: 1px solid rgba(158, 157, 185, 0.3);
+    border-radius: 4px;
+    padding: 10px 12px;
+    background-color: transparent;
+    font-family: var(--quicksand);
+    font-size: 15px;
+}
+
+.message__input textarea:focus {
+    outline: 1px solid #3B3951;
+}
+
+.contact__box > button {
+    background: #EA680B;
+    border-radius: 4px;
+    font-family: var(--quicksand);
+    padding: 14px 16px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.contact__box > button ion-icon {
+    font-size: 20px;
+}
+
+.contact__details {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.contact__details > a,p {
+    display: flex;
+    align-items: center; 
+    gap: 0.4rem;
+    font-family: var(--quicksand);
+    font-style: normal;
+    word-break: break-all;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8D8BAC;
+    transition: color 0.2s linear;
+}
+
+.contact__details > a:hover {
+    color: #3B3951;
+}
+
+/* Section 7 : Contact Us */
+
 /* ****************************************************** */
 
 /* Responsive Media Queries */
 
+@media all and (max-width : 1200px) {
+
+    /* Section 7 : Contact Us */
+    
+    .contact__box {
+        width: 50%;
+    }
+    
+    .contact__details {
+        width: 40%;
+    }
+
+    /* Section 7 : Contact Us */
+}
+ 
 @media all and (max-width : 900px) {
 
     /* Section 1 : Hero Section & Section 2 : About Us */
@@ -273,6 +723,82 @@
 
     /* Section 3 : Why Us? */
 
+    /* Section 7 : Contact Us */
+
+    .section7__data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    
+    .contact__box {
+        width: 80%;
+    }
+
+    .main__inputs, .message__input textarea {
+        width: 100%;
+    }
+    
+    .contact__details {
+        width: 80%;
+    }
+
+    /* Section 7 : Contact Us */
+
+}
+
+
+@media all and (max-width : 800px) {
+    /* Section 4 : Why Us Depth */
+
+    .home__section4 {
+        padding: 1rem;
+    }
+
+    .section4__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .whyus__box {
+        width: 100%;
+    }
+
+    .whyus__box:nth-child(2n+1) {
+        transform: translateY(0);
+    }
+
+    /* Section 4 : Why Us Depth */
+
+    /* Section 6 : Technologies */
+
+    .section6__head {
+        width: 100%;
+    }
+
+    .section6__head p {
+        width: 80%;
+    }
+
+    /* Section 6 : Technologies */
+}
+
+@media all and (max-width : 600px) {
+    /* Section 7 : Contact Us */
+    
+    .contact__box {
+        width: 90%;
+    }
+    
+    .contact__details {
+        width: 90%;
+    }
+
+    /* Section 7 : Contact Us */
 }
 
 @media all and (max-width : 500px) {
@@ -304,6 +830,43 @@
     }
 
     /* Section 3 : Why Us? */
+
+    /* Section 4 : Why Us Depth */
+
+    .whyus__box p {
+        width: 100%;
+    }
+
+    /* Section 4 : Why Us Depth */
+
+    /* Section 6 : Technologies */
+
+    .section6__head {
+        width: 100%;
+    }
+
+    .section6__head p {
+        width: 98%;
+    }
+
+    /* Section 6 : Technologies */
+
+    /* Section 7 : Contact Us */
+    
+    .contact__box {
+        width: 95%;
+    }
+
+    .main__inputs {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact__details {
+        width: 95%;
+    }
+
+    /* Section 7 : Contact Us */
 
 }
 
@@ -354,5 +917,28 @@
     }
 
     /* Section 3 : Why Us? */
+
+    /* Section 6 : Technologies */
+
+    .section6__data {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: scroll;
+        padding: 0 12px;
+    }
+
+    .section6__data::-webkit-scrollbar {
+        height: 0;
+    }
+
+    .techno__box {
+        flex: 0 0 auto;
+        margin: 10px 0;
+    }
+
+    /* Section 6 : Technologies */
 
 }

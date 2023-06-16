@@ -29,9 +29,9 @@ a {
 }
 
 .main__center {
-    width: 1400px;
+    width: 100%;
     max-width: 100%;
     margin: auto;
-    padding-top: 76px;
     min-height: 100vh;
+    padding-top: 76px;
 }
