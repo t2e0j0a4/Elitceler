@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import styles from "./Navbar.module.css";
 import Logo from "../../Assets/Logo.svg";
@@ -11,6 +11,18 @@ const Navbar = () => {
 
   const location = useLocation();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      if (window.scrollY >= 200) {
+        setMenuToggle(false);
+      }
+    }, 0);
+
+    return () => {
+      clearInterval(id);
+    };
+  }, []);
 
   return (
     <nav className={app__navbar}>
