@@ -21,6 +21,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style-type: none;
+}
+
 .app {
     width: 100%;
     max-width: 100%;
@@ -33,5 +37,5 @@ a {
     max-width: 100%;
     margin: auto;
     min-height: 100vh;
-    padding-top: 76px;
+    /* padding-top: 76px; */
 }

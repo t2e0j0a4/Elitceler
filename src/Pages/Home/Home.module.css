@@ -187,7 +187,7 @@
     align-items: center;
     flex-direction: column;
     gap: 1rem;
-    padding: 76px 1rem 2rem 1rem;
+    padding: 3rem 1rem 2rem 1rem;
 }
 
 .home__section3 h2 {
@@ -639,7 +639,7 @@
     gap: 2rem;
 }
 
-.contact__details > a,p {
+.contact__details > a, .contact__details > p {
     display: flex;
     align-items: center; 
     gap: 0.4rem;
