@@ -1,0 +1,28 @@
+@import "/src/index.css";
+
+.app__gotop {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #292839;
+    border: none;
+    box-shadow: 0 0 2px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 989;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.app__gotop ion-icon {
+    font-size: 32px;
+    color: #EA680B;
+}
