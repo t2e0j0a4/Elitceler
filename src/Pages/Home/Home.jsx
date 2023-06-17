@@ -18,7 +18,7 @@ const Home = () => {
           <div className={section1__side1}>
             <h1>"PRODUCTS THAT BRIDGE TO THE REALITY"</h1>
             <p>The future belongs to the generation who believes in dreams. We at ElitCeler Tech perform infinite times of continuous processes of improvements to fulfil those dreams.</p>
-            <button type='button'>Reach Us</button>
+            <a href='#whyus'>Reach Us</a>
           </div>
           <div className={section1__side2}>
             <img src={Hero1} alt="Hero" />

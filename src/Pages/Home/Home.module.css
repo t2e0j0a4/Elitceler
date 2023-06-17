@@ -65,7 +65,7 @@
     line-height: 28px;
 }
 
-.section1__side1 button {
+.section1__side1 a {
     display: flex;
     justify-content: center;
     align-items: center;
