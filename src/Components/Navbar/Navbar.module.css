@@ -101,10 +101,10 @@
     }
     
     .navbar__list.active {
-        height: 50vh;
+        height: 48vh;
         z-index: 9999;
         overflow-y: auto;
-        padding-top: 24px;
+        padding-top: 26px;
     }
 
     .menu__smallscreen {
