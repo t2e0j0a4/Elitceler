@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import {Routes, Route, useLocation} from "react-router-dom";
+import {Routes, Route, useLocation, useNavigate} from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import GoTop from './Components/GoTop/GoTop';
@@ -8,6 +8,7 @@ import {Home, Team, Blogs, Blog, NotFound, Projects} from "./Pages";
 const App = () => {
 
    let location = useLocation();
+   let navigate = useNavigate();
   
   // Function to make Captialize Words.
   const makeWordCaptialize = (word) => {
@@ -40,7 +41,8 @@ const App = () => {
   }, [seeGoTop]);
 
   const comeToTop = () => {
-    window.scrollTo({top : 0, behavior : 'smooth'});
+    location.pathname === '/' && navigate('/');
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   return (

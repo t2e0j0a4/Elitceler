@@ -1,1 +1,62 @@
 @import "/src/index.css";
+
+.app__blogs {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-color: #FFF;
+}
+
+.blogs__center {
+    width: 1400px;
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+.blogs__head {
+    width: 640px;
+    max-width: 100%;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.8rem;
+    background-color: #FAFAFF;
+    box-shadow: 0px 3px 12px rgba(6, 10, 45, 0.06);
+    border-radius: 4px;
+}
+
+.blogs__head h3 {
+    font-family: var(--mulish);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 34px;
+    color: #8D8BAC;
+    text-align: center;
+}
+
+.blogs__head p {
+    font-family: var(--poppins);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 40px;
+    text-align: center;
+    color: #3B3951;
+}
+
+.blogs__head p span {
+    color: #E45817;
+}
+
+@media all and (max-width : 600px){
+    .blogs__head p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
