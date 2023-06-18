@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import GoTop from './Components/GoTop/GoTop';
 import {Home, Team, Blogs, Blog, NotFound, Projects} from "./Pages";
+import State from './Context/State';
 
 const App = () => {
 
@@ -46,21 +47,23 @@ const App = () => {
   }
 
   return (
-    <div className="app">
-      <Navbar />
-      <div className="main__center">
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/team" element={<Team />} />
-          <Route exact path="/blogs" element={<Blogs />} />
-          <Route exact path="/blog/:id" element={<Blog />} />
-          <Route exact path="*" element={<NotFound />} />
-          <Route exact path="/projects" element={<Projects />} />
-        </Routes>
+    <State>
+      <div className="app">
+        <Navbar />
+        <div className="main__center">
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/team" element={<Team />} />
+            <Route exact path="/blogs" element={<Blogs />} />
+            <Route exact path="/blog/:id" element={<Blog />} />
+            <Route exact path="*" element={<NotFound />} />
+            <Route exact path="/projects" element={<Projects />} />
+          </Routes>
+        </div>
+        <Footer />
+        {seeGoTop && <GoTop comeToTop={comeToTop} />}
       </div>
-      <Footer />
-      {seeGoTop && <GoTop comeToTop={comeToTop} />}
-    </div>
+    </State>
   );
 }
 

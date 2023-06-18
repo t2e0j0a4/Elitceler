@@ -1,12 +1,18 @@
-import React from 'react'
+import React , {useContext, useState} from 'react'
 import {whyUs,techPartners, technologies} from "../../Constant";
 import styles from "./Home.module.css";
 import Hero1 from "../../Assets/Hero1.svg";
 import Hero2 from "../../Assets/Hero2.png";
+import myContext from '../../Context/Context';
 
 const Home = () => {
 
-  const {app__home, home__sections, section1__out, section2__out, section3__out, section4__out, section5__out, section6__out, section7__out, home__section1, section1__side1, section1__side2, home__section2, section2__side1, side1__head, side1__icon, section2__side2, home__section3, home__section4, section4__items, whyus__box, whyusbox__icon, home__section5, section5__data, tech__box, home__section6, section6__head, section6__data, techno__box, home__section7, section7__head, section7__data, contact__box, main__inputs, detail__input, message__input, contact__details } = styles;
+  const {app__home, home__sections, section1__out, section2__out, section3__out, section4__out, section5__out, section6__out, section7__out, home__section1, section1__side1, section1__side2, home__section2, section2__side1, side1__head, side1__icon, section2__side2, home__section3, home__section4, section4__items, whyus__box, whyusbox__icon, home__section5, section5__data, tech__box, home__section6, section6__head, section6__data, techno__box, home__section7, section7__head, section7__data, contact__box, main__inputs, detail__input, message__input, contact__details, response__gmsg, response__bmsg } = styles;
+
+  const context = useContext(myContext);
+  const {reachUsInputs, reachInputsChange, reachUsSubmit, reachMsgResponse, setReachUsResponse} = context;
+
+  const [showMsg, setShowMsg] = useState(false);
 
   return (
     <section className={app__home}>
@@ -149,21 +155,34 @@ const Home = () => {
 
           <div className={section7__data}>
 
-            <form className={contact__box}>
+            <form className={contact__box} onSubmit={(e) => {
+              reachUsSubmit(e);
+              setShowMsg(true);
+              setTimeout(() => {
+                setShowMsg(false);
+                setReachUsResponse({
+                  success : null,
+                  message : ''
+                })
+              }, 4000);
+            }}>
               <div className={main__inputs}>
                 <div className={detail__input}>
                   <label htmlFor="name">Name*</label>
-                  <input type="text" id='name' placeholder='Enter your Name' required />
+                  <input type="text" id='name' name='fullName' value={reachUsInputs.fullName} onChange={(e) => {reachInputsChange(e)}} placeholder='Enter your Name' required />
                 </div>
                 <div className={detail__input}>
                   <label htmlFor="email">Email*</label>
-                  <input type="text" id='email' placeholder='Enter your Email' required />
+                  <input type="email" id='email' name='email' value={reachUsInputs.email} onChange={(e) => {reachInputsChange(e)}} placeholder='Enter your Email' required />
                 </div>
               </div>
               <div className={message__input}>
-                <textarea name="message" placeholder='Message...'></textarea>
+                <textarea name="message" value={reachUsInputs.message} onChange={(e) => {reachInputsChange(e)}} placeholder='Message...'></textarea>
               </div>
-              <button type='button'>Send Message <ion-icon name="paper-plane-outline"></ion-icon></button>
+              {
+                showMsg && <p className={`${reachMsgResponse.success ? response__gmsg : response__bmsg}`}>{reachMsgResponse.message}</p>
+              }
+              <button type='submit'>Send Message <ion-icon name="paper-plane-outline"></ion-icon></button>
             </form>
 
             <div className={contact__details}>

@@ -661,6 +661,20 @@
     color: #3B3951;
 }
 
+.response__gmsg {
+    font-family: var(--quicksand);
+    font-size: 17px;
+    color: green;
+    text-align: left;
+}
+
+.response__bmsg {
+    font-family: var(--quicksand);
+    font-size: 17px;
+    color: rgb(255, 45, 45);
+    text-align: left;
+}
+
 /* Section 7 : Contact Us */
 
 /* ****************************************************** */
