@@ -36,7 +36,7 @@ const Projects = () => {
 
                     <div className={e__details}>
                       <h4>{item.projectName}</h4>
-                      <a href={item.projectRedirect} target="_blank" rel="noopener noreferrer">Site <ion-icon name="enter-outline"></ion-icon></a>
+                      <a href={item.projectRedirect} target="_blank" rel="noopener noreferrer">Checkout <ion-icon name="enter-outline"></ion-icon></a>
                       <p>{item.projectDesc}</p>
                     </div>
 
