@@ -1,5 +1,16 @@
+// Tech Partners Logos
 import kalative from "./Assets/Kalative.svg";
 import edodwaja from "./Assets/Edodwaja.svg";
+
+// Team Members
+import SaiKrishna from "./Assets/SaiKrishna.svg";
+import NavyaSri from "./Assets/NavyaSri.svg";
+import Karthik from "./Assets/Karthik.svg";
+import Sathvika from "./Assets/Sathvika.svg";
+import Amrutha from "./Assets/Amrutha.svg";
+import Vishvani from "./Assets/Vishvani.svg";
+import Pranathi from "./Assets/Pranathi.svg";
+import Dummy from "./Assets/Dummy.svg";
 
 const whyUs = [
     {
@@ -82,4 +93,242 @@ const technologies = [
     }
 ]
 
-export {whyUs, techPartners, technologies};
+const teamMembers = [
+    {
+        id : 1,
+        name : 'SaiKrishna Alishala',
+        role : 'Founder & CEO',
+        imageSrc: SaiKrishna,
+        links : [
+            {
+                id : 1,
+                name : 'Twitter',
+                logo : 'logo-twitter',
+                link : ''
+            },
+            {
+                id : 2,
+                name : 'Instagram',
+                logo : 'logo-instagram',
+                link : ''
+            },
+            {
+                id : 3,
+                name : 'LinkedIn',
+                logo : 'logo-linkedin',
+                link : ''
+            }
+        ]
+    },
+    {
+        id : 2,
+        name : 'Navya Sri Alishala',
+        role : 'Co-Founder',
+        imageSrc: NavyaSri,
+        links : [
+            {
+                id : 1,
+                name : 'Twitter',
+                logo : 'logo-twitter',
+                link : ''
+            },
+            {
+                id : 2,
+                name : 'Instagram',
+                logo : 'logo-instagram',
+                link : ''
+            },
+            {
+                id : 3,
+                name : 'LinkedIn',
+                logo : 'logo-linkedin',
+                link : ''
+            }
+        ]
+    },
+    {
+        id : 3,
+        name : 'Karthik Nagpuri',
+        role : 'Advisor',
+        imageSrc: Karthik,
+        links : [
+            {
+                id : 1,
+                name : 'Twitter',
+                logo : 'logo-twitter',
+                link : ''
+            },
+            {
+                id : 2,
+                name : 'Instagram',
+                logo : 'logo-instagram',
+                link : ''
+            },
+            {
+                id : 3,
+                name : 'LinkedIn',
+                logo : 'logo-linkedin',
+                link : ''
+            }
+        ]
+    },
+    {
+        id : 4,
+        name : 'Sathvika Vemula',
+        role : 'Frontend Web Dev',
+        imageSrc: Sathvika,
+        links : [
+            {
+                id : 1,
+                name : 'Twitter',
+                logo : 'logo-twitter',
+                link : ''
+            },
+            {
+                id : 2,
+                name : 'Instagram',
+                logo : 'logo-instagram',
+                link : ''
+            },
+            {
+                id : 3,
+                name : 'LinkedIn',
+                logo : 'logo-linkedin',
+                link : ''
+            }
+        ]
+    },
+    {
+        id : 5,
+        name : 'Amrutha Varshini',
+        role : 'Content Writer',
+        imageSrc: Amrutha,
+        links : [
+            {
+                id : 1,
+                name : 'Twitter',
+                logo : 'logo-twitter',
+                link : ''
+            },
+            {
+                id : 2,
+                name : 'Instagram',
+                logo : 'logo-instagram',
+                link : ''
+            },
+            {
+                id : 3,
+                name : 'LinkedIn',
+                logo : 'logo-linkedin',
+                link : ''
+            }
+        ]
+    },
+    {
+        id : 6,
+        name : 'Vishvani Jilukara',
+        role : 'Frontend Web Dev',
+        imageSrc: Vishvani,
+        links : [
+            {
+                id : 1,
+                name : 'Twitter',
+                logo : 'logo-twitter',
+                link : ''
+            },
+            {
+                id : 2,
+                name : 'Instagram',
+                logo : 'logo-instagram',
+                link : ''
+            },
+            {
+                id : 3,
+                name : 'LinkedIn',
+                logo : 'logo-linkedin',
+                link : ''
+            }
+        ]
+    },
+    {
+        id : 7,
+        name : 'Pranati Tantravahi',
+        role : 'Lead UX/UI Designer',
+        imageSrc: Pranathi,
+        links : [
+            {
+                id : 1,
+                name : 'LinkedIn',
+                logo : 'logo-linkedin',
+                link : ''
+            },
+            {
+                id : 2,
+                name : 'Instagram',
+                logo : 'logo-instagram',
+                link : ''
+            },
+            {
+                id : 3,
+                name : 'Medium',
+                logo : 'logo-medium',
+                link : ''
+            }
+        ]
+    },
+    {
+        id : 8,
+        name : 'Hemanth Vakati',
+        role : 'UX/UI Designer',
+        imageSrc: Dummy,
+        links : [
+            {
+                id : 1,
+                name : 'Twitter',
+                logo : 'logo-twitter',
+                link : ''
+            },
+            {
+                id : 2,
+                name : 'Instagram',
+                logo : 'logo-instagram',
+                link : ''
+            },
+            {
+                id : 3,
+                name : 'LinkedIn',
+                logo : 'logo-linkedin',
+                link : ''
+            }
+        ]
+    },
+    {
+        id : 9,
+        name : 'Nagateja V',
+        role : 'Frontend Web Dev',
+        imageSrc: Dummy,
+        links : [
+            {
+                id : 1,
+                name : 'Twitter',
+                logo : 'logo-twitter',
+                link : ''
+            },
+            {
+                id : 2,
+                name : 'Instagram',
+                logo : 'logo-instagram',
+                link : ''
+            },
+            {
+                id : 3,
+                name : 'LinkedIn',
+                logo : 'logo-linkedin',
+                link : ''
+            }
+        ]
+    },
+    
+]
+
+export {whyUs, techPartners, technologies, teamMembers};

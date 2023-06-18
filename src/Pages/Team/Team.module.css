@@ -1,1 +1,171 @@
 @import "/src/index.css";
+
+.app__team {
+    width: 100%;
+    height: 100%;
+    background-color: #FAFAFF;
+}
+
+.team__container {
+    width: 1400px;
+    max-width: 100%;
+    margin: auto;
+    height: 100%;
+    padding: 2rem 1rem;
+}
+
+.team__head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem auto;
+}
+
+.team__head h1 {
+    font-family: var(--mulish);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 34px;
+    color: #3B3951;
+}
+
+.team__head p {
+    width: 50%;
+    font-family: var(--quicksand);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #5c5886;
+    text-align: center;
+}
+
+.team__members {
+    width: 100%;
+    margin: 3rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-content: center;
+    gap: 1.2rem;
+}
+
+.each__member {
+    padding: 3rem 12px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 38.4px rgba(25, 0, 58, 0.1);
+    border-radius: 9.6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.6rem;
+    transition: all 0.2s ease;
+}
+
+.each__member img {
+    width: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+    outline: 6px solid #E45817;
+    outline-offset: 2px;
+    transition: outline 0.2s ease;
+}
+
+.member__head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.member__head h3 {
+    font-family: var(--poppins);
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #1F003B;
+    transition: all 0.2s ease;
+}
+
+.member__head p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #1F003B;
+    transition: all 0.2s ease;
+}
+
+.member__socials {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.member__socials a ion-icon {
+    font-size: 24px;
+    color: #1F003B;
+    transition: all 0.2s ease;
+}
+
+.each__member:hover {
+    background: linear-gradient(#ea8f45, #f25e0f);
+}
+
+.each__member:hover > img {
+    outline : 8px solid #e45817;
+    outline-offset: 0;
+}
+
+.each__member:hover > .member__head h3, .each__member:hover  .member__head p, .each__member:hover .member__socials a ion-icon {
+    color: #FFF;
+}
+
+@media all and (max-width : 1100px) {
+    .team__head p {
+        width : 70%;
+    }
+}
+
+@media all and (max-width : 950px) {
+    .team__members {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 0.6rem;
+    }
+}
+
+@media all and (max-width : 900px) {
+    .team__head p {
+        width : 80%;
+    }
+}
+
+@media all and (max-width : 700px) {
+    .team__head p {
+        width : 96%;
+    }
+}
+
+@media all and (max-width : 600px) {
+    .team__members {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+}
