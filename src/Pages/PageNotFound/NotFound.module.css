@@ -1,1 +1,46 @@
 @import "/src/index.css";
+
+.page__error {
+    width: 1400px;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 3rem 1rem;
+}
+
+.page__error h1 {
+    font-family: var(--mulish);
+    font-size: 120px;
+    text-align: center;
+    color: #23222F;
+}
+
+.page__error p {
+    font-family: var(--quicksand);
+    font-size: 28px;
+    text-align: center;
+    color: #292839;
+}
+
+.page__error a {
+    color: rgba(146, 151, 146, 0.933);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--quicksand);
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.page__error a:hover {
+    color: #292839;
+    text-decoration: underline;
+}
+
+.page__error a ion-icon {
+    font-size: 24px;
+}
