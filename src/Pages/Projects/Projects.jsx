@@ -4,7 +4,7 @@ import { projects } from '../../Constant';
 
 const Projects = () => {
 
-  const { app__projects, projects__center, projects__head, projects__e, e__content, e__box, e__img, e__redirect, e__details, projects__i, i__content, i__box, i__img, i__details } = styles;
+  const { app__projects, projects__center, projects__head, projects__e, e__content, e__box, e__img, e__details, projects__i, i__content, i__box, i__img, i__details } = styles;
 
   let {externalProjects, internalProjects} = projects;
 
@@ -32,13 +32,11 @@ const Projects = () => {
                     
                     <div className={e__img}>
                       <img src={item.projectImage} alt={item.projectName} />
-                      <div className={e__redirect}>
-                        <a href={item.projectRedirect} target="_blank" rel="noopener noreferrer">Visit <ion-icon name="enter-outline"></ion-icon></a>
-                      </div>
                     </div>
 
                     <div className={e__details}>
                       <h4>{item.projectName}</h4>
+                      <a href={item.projectRedirect} target="_blank" rel="noopener noreferrer">Site <ion-icon name="enter-outline"></ion-icon></a>
                       <p>{item.projectDesc}</p>
                     </div>
 
