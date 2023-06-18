@@ -12,6 +12,10 @@ import Vishvani from "./Assets/Vishvani.svg";
 import Pranathi from "./Assets/Pranathi.svg";
 import Dummy from "./Assets/Dummy.svg";
 
+// Projects
+import Project from "./Assets/Project.png";
+import P2 from "./Assets/P2.png";
+
 const whyUs = [
     {
         id : 1,
@@ -331,4 +335,70 @@ const teamMembers = [
     
 ]
 
-export {whyUs, techPartners, technologies, teamMembers};
+const projects = {
+
+    internalProjects: [
+        {
+        id: 1,
+        projectName: "Project",
+        projectDesc:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        projectImage: P2,
+        projectRedirect: "",
+        },
+    ],
+
+    externalProjects: [
+        {
+        id: 1,
+        projectName: "Project",
+        projectDesc:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        projectImage: Project,
+        projectRedirect: "",
+        },
+        {
+        id: 2,
+        projectName: "Project",
+        projectDesc:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        projectImage: Project,
+        projectRedirect: "",
+        },
+        {
+        id: 3,
+        projectName: "Project",
+        projectDesc:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        projectImage: Project,
+        projectRedirect: "",
+        },
+        {
+        id: 4,
+        projectName: "Project",
+        projectDesc:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        projectImage: Project,
+        projectRedirect: "",
+        },
+        {
+        id: 5,
+        projectName: "Project",
+        projectDesc:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        projectImage: Project,
+        projectRedirect: "",
+        },
+        {
+        id: 6,
+        projectName: "Project",
+        projectDesc:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        projectImage: Project,
+        projectRedirect: "",
+        },
+    ]
+    
+};
+
+export {whyUs, techPartners, technologies, teamMembers, projects};
