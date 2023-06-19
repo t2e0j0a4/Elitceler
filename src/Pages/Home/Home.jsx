@@ -1,4 +1,4 @@
-import React , {useContext, useState} from 'react'
+import React , {useContext} from 'react'
 import {whyUs,techPartners, technologies} from "../../Constant";
 import styles from "./Home.module.css";
 import Hero1 from "../../Assets/Hero1.svg";
@@ -10,9 +10,7 @@ const Home = () => {
   const {app__home, home__sections, section1__out, section2__out, section3__out, section4__out, section5__out, section6__out, section7__out, home__section1, section1__side1, section1__side2, home__section2, section2__side1, side1__head, side1__icon, section2__side2, home__section3, home__section4, section4__items, whyus__box, whyusbox__icon, home__section5, section5__data, tech__box, home__section6, section6__head, section6__data, techno__box, home__section7, section7__head, section7__data, contact__box, main__inputs, detail__input, message__input, contact__details, response__gmsg, response__bmsg } = styles;
 
   const context = useContext(myContext);
-  const {reachUsInputs, reachInputsChange, reachUsSubmit, reachMsgResponse, setReachUsResponse} = context;
-
-  const [showMsg, setShowMsg] = useState(false);
+  const {reachUsInputs, reachInputsChange, reachUsSubmit, reachMsgResponse, setReachUsResponse, showMsg, setShowMsg} = context;
 
   return (
     <section className={app__home}>
@@ -157,7 +155,6 @@ const Home = () => {
 
             <form className={contact__box} onSubmit={(e) => {
               reachUsSubmit(e);
-              setShowMsg(true);
               setTimeout(() => {
                 setShowMsg(false);
                 setReachUsResponse({

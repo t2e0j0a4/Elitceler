@@ -23,6 +23,8 @@ const State = (props) => {
         message : ''
     });
 
+    const [showMsg, setShowMsg] = useState(false);
+
     const reachUsSubmit = async (e) => {
         e.preventDefault();
         if (reachUsInputs.fullName && reachUsInputs.email) {
@@ -38,14 +40,15 @@ const State = (props) => {
                     'Content-Type' : 'application/json'
                 }
             });
-
-            setReachUsInputs({fullName : '', email : '', message : ''});
+            
             setReachUsResponse(sendMessage.data);
+            setShowMsg(true);
+            setReachUsInputs({fullName : '', email : '', message : ''});
         }
     }
 
     return (
-        <myContext.Provider value={{ reachUsInputs, reachInputsChange, reachUsSubmit, reachMsgResponse, setReachUsResponse }}>
+        <myContext.Provider value={{ reachUsInputs, reachInputsChange, reachUsSubmit, reachMsgResponse, setReachUsResponse, showMsg, setShowMsg }}>
             {props.children}
         </myContext.Provider>
     )
