@@ -63,8 +63,83 @@ const State = (props) => {
         setTotalBlogs(total);
     }
 
+    // Blog Adding Here
+
+    const [blogDetails, setBlogDetails] = useState({
+        blogTitle : "",
+        blogDescription : "",
+        blogImage : ""
+    });
+
+    const [blogSubmitMsg, setBlogSubmitMsg] = useState({
+        message : '',
+        success : null
+    })
+
+    const [blogShowMsg, setBlogShowMsg] = useState(false);
+
+    const convertToBase64 = (file) => {
+      return new Promise((resolve, reject) => {
+        const fileReader = new FileReader();
+        fileReader.readAsDataURL(file);
+        fileReader.onload = () => {
+          resolve(fileReader.result);
+        };
+        fileReader.onerror = (error) => {
+          reject(error);
+        };
+      });
+    };
+
+    const handleFile = async (e) => {
+        const file = e.target.files[0];
+        const convertBase64 = await convertToBase64(file); 
+        setBlogDetails({
+            ...blogDetails, blogImage : convertBase64
+        });
+    };
+
+    const handleInputs = (e) => {
+        setBlogDetails({
+            ...blogDetails, [e.target.name] : e.target.value
+        })
+    }
+
+    // Adding a new Blog
+    const submitBlog = async (e) => {
+        e.preventDefault();
+
+        try {
+            let {blogTitle, blogDescription, blogImage} = blogDetails;
+            if (blogTitle && blogDescription) {
+                const response = await axios.post(`${API}/v1/blogs/addblog`, {
+                    blogTitle, blogDescription, blogImage
+                }, {
+                    headers : {
+                        'Content-Type' : 'application/json'
+                    }
+                });
+
+                const {success, message} = response.data;
+
+                setBlogShowMsg(true);
+                setBlogSubmitMsg({
+                    ...blogSubmitMsg, success, message
+                });
+                setBlogDetails({
+                    blogTitle : '',
+                    blogDescription : "",
+                    blogImage : ''
+                });
+            }
+
+        } catch (error) {
+            console.log(error.message);
+        }
+    }
+
     return (
-        <myContext.Provider value={{ reachUsInputs, reachInputsChange, reachUsSubmit, reachMsgResponse, setReachUsResponse, showMsg, setShowMsg, fetchAllBlogs, allBlogs, totalBlogs }}>
+        <myContext.Provider value={{ reachUsInputs, reachInputsChange, reachUsSubmit, reachMsgResponse, setReachUsResponse, showMsg, setShowMsg, fetchAllBlogs, allBlogs, totalBlogs, handleFile, blogDetails, handleInputs, submitBlog, blogShowMsg, setBlogSubmitMsg, blogSubmitMsg, setBlogShowMsg }}>
             {props.children}
         </myContext.Provider>
     )

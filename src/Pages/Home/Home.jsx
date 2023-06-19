@@ -161,7 +161,7 @@ const Home = () => {
                   success : null,
                   message : ''
                 })
-              }, 4000);
+              }, 5000);
             }}>
               <div className={main__inputs}>
                 <div className={detail__input}>
