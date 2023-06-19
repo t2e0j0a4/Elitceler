@@ -6,6 +6,8 @@ const State = (props) => {
 
     const API = 'http://localhost:5000';
 
+    // Contact Us API Endpoint
+
     const [reachUsInputs, setReachUsInputs] = useState({
         fullName : '',
         email : '',
@@ -47,8 +49,22 @@ const State = (props) => {
         }
     }
 
+    // Blogs API Endpoints
+
+    const [allBlogs, setAllBlogs] = useState([]);
+    const [totalBlogs, setTotalBlogs] = useState(0);
+
+    // Function : For fetching all blogs from API.
+    const fetchAllBlogs = async () => {
+        const apiResponse = await axios.get(`${API}/v1/blogs/getblogs`);
+        const blogsData = apiResponse.data;
+        const {blogs, total} = blogsData;
+        setAllBlogs(blogs);
+        setTotalBlogs(total);
+    }
+
     return (
-        <myContext.Provider value={{ reachUsInputs, reachInputsChange, reachUsSubmit, reachMsgResponse, setReachUsResponse, showMsg, setShowMsg }}>
+        <myContext.Provider value={{ reachUsInputs, reachInputsChange, reachUsSubmit, reachMsgResponse, setReachUsResponse, showMsg, setShowMsg, fetchAllBlogs, allBlogs, totalBlogs }}>
             {props.children}
         </myContext.Provider>
     )
