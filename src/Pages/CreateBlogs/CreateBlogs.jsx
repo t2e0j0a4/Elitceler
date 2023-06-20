@@ -32,18 +32,17 @@ const CreateBlogs = () => {
                             success: null,
                             message: "",
                           });
-                        }, 5000);
-                    }}>
+                        }, 5000);}}>
+                        <div className={text__space}>
+                            <input required type="text" name="blogTitle" placeholder='Blog Title*' value={blogDetails.blogTitle} onChange={(e) => {handleInputs(e)}} />
+                            <textarea required name="blogDescription" placeholder='Blog Description*' value={blogDetails.blogDescription} onChange={(e) => {handleInputs(e)}} />
+                        </div>
                         <div className={image__space}>
                             <label htmlFor="bImage">
                                 <img src={blogDetails.blogImage || defaultBlogPic} alt="Blog" />
                             </label>
                             <input type="file" name="blogImage" id='bImage' multiple={false} accept='.png, .svg, .jpeg, .jpg' onChange={(e) => {handleFile(e)}} />
                             <span>Click on Image to change</span>
-                        </div>
-                        <div className={text__space}>
-                            <input required type="text" name="blogTitle" placeholder='Blog Title*' value={blogDetails.blogTitle} onChange={(e) => {handleInputs(e)}} />
-                            <textarea required name="blogDescription" placeholder='Blog Description*' value={blogDetails.blogDescription} onChange={(e) => {handleInputs(e)}} />
                         </div>
                         {
                             blogShowMsg && <p className={`${blogSubmitMsg.success ? response__gmsg : response__bmsg}`}>{blogSubmitMsg.message}</p>

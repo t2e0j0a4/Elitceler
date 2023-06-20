@@ -3,7 +3,7 @@
 .app__create {
     width: 100%;
     max-width: 100%;
-    background-color: #FAFAFF;
+    background-color: #FFF;
     min-height: 100vh;
 }
 
@@ -96,17 +96,17 @@
 
 .text__space input {
     width: 100%;
-    background-color: transparent;
-    outline: none;
+    background-color: #FAFAFF;
     border: none;
     font-family: var(--quicksand);
     font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
+    font-weight: 600;
+    font-size: 26px;
     line-height: 32px;
-    padding: 8px;
+    padding: 12px 10px;
+    border-radius: 4px;
     color: #3B3951;
-    border-bottom: 1px solid #232323;
+    outline: none;
 }
 
 .text__space textarea {
@@ -118,11 +118,15 @@
     padding: 8px;
     height: 180px;
     color: #3B3951;
-    outline: none;
-    border: 1px solid #232323;
+    border: none;
     border-radius: 4px;
     resize: vertical;
-    background-color: transparent;
+    background-color: #FAFAFF;
+    outline: none;
+}
+
+.text__space input:focus, .text__space textarea:focus {
+    outline: 1px solid #3B3951;
 }
 
 .text__space input::placeholder, .text__space textarea::placeholder {
