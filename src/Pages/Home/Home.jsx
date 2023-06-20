@@ -94,7 +94,7 @@ const Home = () => {
 
       <div className={section5__out}>
         <div className={`${home__section5} ${home__sections}`}>
-          <h2>Our Tech Partners</h2>
+          <h2>Our Partners</h2>
           <div className={section5__data}>
             {
               techPartners.map((item) => {

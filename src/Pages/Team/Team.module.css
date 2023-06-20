@@ -72,6 +72,7 @@
 .each__member img {
     width: 100px;
     object-fit: contain;
+    object-position: top;
     border-radius: 50%;
     outline: 6px solid #E45817;
     outline-offset: 2px;

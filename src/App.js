@@ -21,6 +21,9 @@ const App = () => {
   useEffect(() => {
     let currentPageName = location.pathname.replace('/', '');
     document.title = currentPageName ? `ElitCeler | ${makeWordCaptialize(currentPageName)}` : 'ElitCeler | Building Tech Everywhere!';
+    if (location.pathname.includes('/blog/')) {
+      document.title = 'Blogs | ElitCeler Technologies';
+    }
     window.scrollTo({top : 0, behavior : 'smooth'});
   }, [location]);
 

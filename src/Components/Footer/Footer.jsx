@@ -44,15 +44,12 @@ const Footer = () => {
           <li>About Us</li>
           <li>Partners</li>
           <li>Products</li>
-          <li>Resources</li>
         </ul>
 
         <ul className={footer__rside}>
           <li>Support</li>
 
-          <li>Help</li>
           <li>Privacy Policy</li>
-          <li>Terms & Cond's</li>
           <li>FAQ's</li>
         </ul>
       </div>

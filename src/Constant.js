@@ -5,10 +5,7 @@ import edodwaja from "./Assets/Edodwaja.svg";
 // Team Members
 import SaiKrishna from "./Assets/SaiKrishna.svg";
 import NavyaSri from "./Assets/NavyaSri.svg";
-import Karthik from "./Assets/Karthik.svg";
-import Sathvika from "./Assets/Sathvika.svg";
 import Amrutha from "./Assets/Amrutha.svg";
-import Vishvani from "./Assets/Vishvani.svg";
 import Pranathi from "./Assets/Pranathi.svg";
 import Dummy from "./Assets/Dummy.svg";
 
@@ -89,11 +86,6 @@ const technologies = [
         id : 7,
         tech : 'Flutter',
         name : 'settings'
-    },
-    {
-        id : 8,
-        tech : 'Heroku',
-        name : 'settings'
     }
 ]
 
@@ -152,58 +144,6 @@ const teamMembers = [
     },
     {
         id : 3,
-        name : 'Karthik Nagpuri',
-        role : 'Advisor',
-        imageSrc: Karthik,
-        links : [
-            {
-                id : 1,
-                name : 'Twitter',
-                logo : 'logo-twitter',
-                link : ''
-            },
-            {
-                id : 2,
-                name : 'Instagram',
-                logo : 'logo-instagram',
-                link : ''
-            },
-            {
-                id : 3,
-                name : 'LinkedIn',
-                logo : 'logo-linkedin',
-                link : ''
-            }
-        ]
-    },
-    {
-        id : 4,
-        name : 'Sathvika Vemula',
-        role : 'Frontend Web Dev',
-        imageSrc: Sathvika,
-        links : [
-            {
-                id : 1,
-                name : 'Twitter',
-                logo : 'logo-twitter',
-                link : ''
-            },
-            {
-                id : 2,
-                name : 'Instagram',
-                logo : 'logo-instagram',
-                link : ''
-            },
-            {
-                id : 3,
-                name : 'LinkedIn',
-                logo : 'logo-linkedin',
-                link : ''
-            }
-        ]
-    },
-    {
-        id : 5,
         name : 'Amrutha Varshini',
         role : 'Content Writer',
         imageSrc: Amrutha,
@@ -229,33 +169,7 @@ const teamMembers = [
         ]
     },
     {
-        id : 6,
-        name : 'Vishvani Jilukara',
-        role : 'Frontend Web Dev',
-        imageSrc: Vishvani,
-        links : [
-            {
-                id : 1,
-                name : 'Twitter',
-                logo : 'logo-twitter',
-                link : ''
-            },
-            {
-                id : 2,
-                name : 'Instagram',
-                logo : 'logo-instagram',
-                link : ''
-            },
-            {
-                id : 3,
-                name : 'LinkedIn',
-                logo : 'logo-linkedin',
-                link : ''
-            }
-        ]
-    },
-    {
-        id : 7,
+        id : 4,
         name : 'Pranati Tantravahi',
         role : 'Lead UX/UI Designer',
         imageSrc: Pranathi,
@@ -281,7 +195,7 @@ const teamMembers = [
         ]
     },
     {
-        id : 8,
+        id : 5,
         name : 'Hemanth Vakati',
         role : 'UX/UI Designer',
         imageSrc: Dummy,
@@ -307,7 +221,7 @@ const teamMembers = [
         ]
     },
     {
-        id : 9,
+        id : 6,
         name : 'Nagateja V',
         role : 'Frontend Web Dev',
         imageSrc: Dummy,

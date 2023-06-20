@@ -141,8 +141,21 @@ const State = (props) => {
         }
     }
 
+    // Fetching a single blog
+
+    const [blogPost, setBlogPost] = useState({});
+    const [blogPostLoad, setBlogPostLoad] = useState(false);
+
+    const fetchASingleBlog = async (blogId) => {
+        setBlogPostLoad(true);
+        let response = await axios.get(`${API}/v1/blogs/getblog/${blogId}`);
+        const {blog} = response.data;
+        setBlogPost(blog[0]);
+        setBlogPostLoad(false);
+    }
+
     return (
-        <myContext.Provider value={{ reachUsInputs, reachInputsChange, reachUsSubmit, reachMsgResponse, setReachUsResponse, showMsg, setShowMsg, fetchAllBlogs, allBlogs, totalBlogs, handleFile, blogDetails, handleInputs, submitBlog, blogShowMsg, setBlogSubmitMsg, blogSubmitMsg, setBlogShowMsg, allBlogsLoad }}>
+        <myContext.Provider value={{ reachUsInputs, reachInputsChange, reachUsSubmit, reachMsgResponse, setReachUsResponse, showMsg, setShowMsg, fetchAllBlogs, allBlogs, totalBlogs, handleFile, blogDetails, handleInputs, submitBlog, blogShowMsg, setBlogSubmitMsg, blogSubmitMsg, setBlogShowMsg, allBlogsLoad, fetchASingleBlog, blogPost, blogPostLoad }}>
             {props.children}
         </myContext.Provider>
     )
