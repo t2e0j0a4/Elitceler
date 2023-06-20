@@ -53,16 +53,19 @@ const State = (props) => {
 
     const [allBlogs, setAllBlogs] = useState([]);
     const [totalBlogs, setTotalBlogs] = useState(0);
+    const [allBlogsLoad, setAllBlogsLoad] = useState(false);
 
     // Function : For fetching all blogs from API.
     const fetchAllBlogs = async () => {
+        setAllBlogsLoad(true);
         const apiResponse = await axios.get(`${API}/v1/blogs/getblogs`);
         const blogsData = apiResponse.data;
         const {blogs, total} = blogsData;
         setAllBlogs(blogs);
         setTotalBlogs(total);
+        setAllBlogsLoad(false);
     }
-
+    
     // Blog Adding Here
 
     const [blogDetails, setBlogDetails] = useState({
@@ -139,7 +142,7 @@ const State = (props) => {
     }
 
     return (
-        <myContext.Provider value={{ reachUsInputs, reachInputsChange, reachUsSubmit, reachMsgResponse, setReachUsResponse, showMsg, setShowMsg, fetchAllBlogs, allBlogs, totalBlogs, handleFile, blogDetails, handleInputs, submitBlog, blogShowMsg, setBlogSubmitMsg, blogSubmitMsg, setBlogShowMsg }}>
+        <myContext.Provider value={{ reachUsInputs, reachInputsChange, reachUsSubmit, reachMsgResponse, setReachUsResponse, showMsg, setShowMsg, fetchAllBlogs, allBlogs, totalBlogs, handleFile, blogDetails, handleInputs, submitBlog, blogShowMsg, setBlogSubmitMsg, blogSubmitMsg, setBlogShowMsg, allBlogsLoad }}>
             {props.children}
         </myContext.Provider>
     )

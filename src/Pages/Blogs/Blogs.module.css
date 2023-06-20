@@ -54,6 +54,139 @@
     color: #E45817;
 }
 
+.blogs__content {
+    width: 1200px;
+    max-width: 100%;
+    margin: 3rem auto;
+    height: 100%;
+}
+
+.blogs__content h2 {
+    font-family: var(--mulish);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: left;
+    color: #3B3951;
+}
+
+.blogs__content p {
+    font-family: var(--quicksand);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: 24px;
+    text-align: left;
+    color: #3B3951;
+}
+
+.blogs__space {
+    width: 100%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.each__blog {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #FAFAFF;
+    box-shadow: 0 0 12px #FAFAFF;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.each__blog img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.blog__details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.blog__details h4 {
+    font-family: var(--mulish); 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: #3B3951;
+    transition: color 0.2s ease;
+}
+
+.blog__details p {
+    font-family: var(--quicksand);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5d5b74;
+    transition: color 0.2s ease;
+}
+
+.each__blog:hover {
+    background-color: #f16d30;
+}
+
+.each__blog:hover .blog__details h4, .each__blog:hover .blog__details p {
+    color: #FAFAFF;
+}
+
+.blogs__loader {
+    width: 100%;
+    max-width: 100%;
+    min-height: 50vh;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogs__loader p {
+    font-family: var(--quicksand);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #5d5b74;
+}
+
+@media all and (max-width : 1000px) {
+    .blogs__space {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (max-width : 710px) {
+    .blogs__space {
+        grid-template-columns: 1fr;
+    }
+
+    .blog__details h4 {
+        font-size: 18px;
+    }
+
+    .blog__details p {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width : 500px) {
+    .blogs__center {
+        padding: 2rem 0.8rem;
+    }
+}
+
 @media all and (max-width : 600px){
     .blogs__head p {
         font-size: 20px;
