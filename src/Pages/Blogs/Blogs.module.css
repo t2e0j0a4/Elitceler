@@ -102,6 +102,8 @@
 
 .each__blog img {
     width: 100%;
+    height: 240px;
+    padding: 1rem 0.4rem;
     object-fit: contain;
 }
 
@@ -184,6 +186,11 @@
 @media all and (max-width : 500px) {
     .blogs__center {
         padding: 2rem 0.8rem;
+    }
+
+    .each__blog img {
+        height: 260px;
+        padding: 0.4rem;
     }
 }
 
