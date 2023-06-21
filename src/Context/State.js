@@ -4,7 +4,7 @@ import myContext from "./Context";
 
 const State = (props) => {
 
-    const API = 'http://localhost:5000';
+    const API = "https://elitceler-server-e803.onrender.com";
 
     // Contact Us API Endpoint
 
