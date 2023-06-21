@@ -31,7 +31,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className={navbar__logo}>
-          <img src={Logo} alt="Elitceler"/>
+          <Link to={'/'}><img src={Logo} alt="Elitceler"/></Link>
         </div>
 
         {/* Navigations */}

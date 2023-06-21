@@ -90,9 +90,9 @@ const Home = () => {
 
       {/* Section 4 - Why Us Depth */}
 
-      {/* Section 5 - Our Tech Partners */}
+      {/* Section 5 - Our Partners */}
 
-      <div className={section5__out}>
+      <div className={section5__out} id='partners'>
         <div className={`${home__section5} ${home__sections}`}>
           <h2>Our Partners</h2>
           <div className={section5__data}>

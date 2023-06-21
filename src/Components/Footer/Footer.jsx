@@ -1,9 +1,10 @@
 import React from 'react'
 import styles from "./Footer.module.css";
 import logo from "../../Assets/Logo.svg";
+import { Link, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
-
+  const navigate = useNavigate();
   const { app__footer, footer__center, footer__side1, side1__links, footer__rside, copyright__base } = styles;
 
   return (
@@ -33,24 +34,24 @@ const Footer = () => {
         <ul className={footer__rside}>
           <li>Our Divisions</li>
 
-          <li>Health Care</li>
-          <li>Education</li>
-          <li>Finance</li>
+          <li><Link to="/">Health Care</Link></li>
+          <li><Link to="/">Education</Link></li>
+          <li><Link to="/projects">Finance</Link></li>
         </ul>
 
         <ul className={footer__rside}>
           <li>Company</li>
 
-          <li>About Us</li>
-          <li>Partners</li>
-          <li>Products</li>
+          <li><a onClick={() => {navigate('/');}} href="#whyus">About Us</a></li>
+          <li><a onClick={() => {navigate('/');}} href="#partners">Partners</a></li>
+          <li><Link to="/projects">Projects</Link></li>
         </ul>
 
         <ul className={footer__rside}>
           <li>Support</li>
 
-          <li>Privacy Policy</li>
-          <li>FAQ's</li>
+          <li><Link to="/">Privacy Policy</Link></li>
+          <li><Link to="/">FAQ's</Link></li>
         </ul>
       </div>
 

@@ -83,7 +83,7 @@
     color: #FFFFFF;
 }
 
-.footer__rside li:nth-child(n+2) {
+.footer__rside li a {
     font-family: var(--quicksand);
     font-style: normal;
     font-weight: 500;
@@ -91,11 +91,10 @@
     line-height: 19px;
     color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-.footer__rside li:nth-child(n+2):hover {
-    transform: scale(1.05);
+.footer__rside li a:hover {
     color: #FFFFFF;
 }
 

@@ -101,7 +101,7 @@
     }
     
     .navbar__list.active {
-        height: 48vh;
+        height: 49vh;
         z-index: 9999;
         overflow-y: auto;
         padding-top: 26px;
