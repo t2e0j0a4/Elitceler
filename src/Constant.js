@@ -7,6 +7,7 @@ import SaiKrishna from "./Assets/SaiKrishna.jpg";
 import NavyaSri from "./Assets/NavyaSri.jpg";
 import Amrutha from "./Assets/Amrutha.svg";
 import Pranathi from "./Assets/Pranathi.svg";
+import Hemanth from "./Assets/Hemanth.png";
 import Dummy from "./Assets/Dummy.svg";
 
 // Projects
@@ -145,7 +146,7 @@ const teamMembers = [
     {
         id : 3,
         name : 'Amrutha Varshini',
-        role : 'Content Writer',
+        role : 'Creative Head',
         imageSrc: Amrutha,
         links : [
             {
@@ -198,7 +199,7 @@ const teamMembers = [
         id : 5,
         name : 'Hemanth Vakati',
         role : 'UX/UI Designer',
-        imageSrc: Dummy,
+        imageSrc: Hemanth,
         links : [
             {
                 id : 1,

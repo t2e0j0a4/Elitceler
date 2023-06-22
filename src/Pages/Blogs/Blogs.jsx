@@ -55,14 +55,14 @@ const Blogs = () => {
                       <img src={blogImage || defaultBlogPic} alt={blogTitle} />
                       <div className={blog__details}>
                         <h4>
-                          {blogTitle.length <= 24
+                          {blogTitle.length <= 32
                             ? blogTitle
-                            : blogTitle.slice(0, 24) + " ..."}
+                            : blogTitle.slice(0, 32) + " ..."}
                         </h4>
                         <p>
-                          {blogDescription.length <= 40
+                          {blogDescription.length <= 56
                             ? blogDescription
-                            : blogDescription.slice(0, 40) + " ..."}
+                            : blogDescription.slice(0, 56) + " ... Read More"}
                         </p>
                       </div>
                     </div>

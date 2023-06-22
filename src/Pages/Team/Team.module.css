@@ -71,7 +71,8 @@
 
 .each__member img {
     width: 100px;
-    object-fit: contain;
+    height: 100px;
+    object-fit: cover;
     object-position: top;
     border-radius: 50%;
     outline: 6px solid #E45817;

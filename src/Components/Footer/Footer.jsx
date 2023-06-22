@@ -44,7 +44,6 @@ const Footer = () => {
 
           <li><a onClick={() => {navigate('/');}} href="#whyus">About Us</a></li>
           <li><a onClick={() => {navigate('/');}} href="#partners">Partners</a></li>
-          <li><Link to="/projects">Projects</Link></li>
         </ul>
 
         <ul className={footer__rside}>
