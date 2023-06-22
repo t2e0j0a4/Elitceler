@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Blogs = () => {
   
-  const {app__blogs, blogs__center, blogs__head, blogs__content, blogs__space, each__blog, blog__details, blogs__loader} = styles;
+  const {app__blogs, blogs__center, blogs__head, blogs__content, blogs__space, each__blog, blog__details, blogs__loader, building__blocks} = styles;
 
   const context = useContext(myContext);
   const {fetchAllBlogs, allBlogs, totalBlogs, allBlogsLoad} = context;
@@ -31,7 +31,15 @@ const Blogs = () => {
         {/* Blogs Source */}
         {allBlogsLoad ? (
           <div className={blogs__loader}>
-            <p>Fetching blogs...</p>
+            <div className={building__blocks}>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
           </div>
         ) : (
           <div className={blogs__content}>

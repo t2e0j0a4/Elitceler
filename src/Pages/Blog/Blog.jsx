@@ -10,7 +10,7 @@ const Blog = () => {
   const context = useContext(myContext);
   const { fetchASingleBlog, blogPost, blogPostLoad } = context;
 
-  const {main__blog, blog__center, blogs__loader, blog__data, blog__details, blog__img, blog__desc, go__back} = styles;
+  const {main__blog, blog__center, blogs__loader, blog__data, blog__details, blog__img, blog__desc, go__back, building__blocks} = styles;
   
   useEffect(() => {
     fetchASingleBlog(id);
@@ -24,7 +24,15 @@ const Blog = () => {
         {
           blogPostLoad ? (
             <div className={blogs__loader}>
-              <p>Gathering blog info...</p>
+              <div className={building__blocks}>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </div>
           ) : (
             <div className={blog__data} id={`blog__${blogPost._id}`}>
