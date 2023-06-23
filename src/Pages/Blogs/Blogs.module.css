@@ -94,8 +94,8 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #ddd;
-  box-shadow: 0 0 12px #ddd;
+  background-color: #fafaff;
+  box-shadow: 0 0 12px #fafaff;
   border-radius: 8px;
   transition: background-color 0.3s linear, box-shadow 0.2s linear;
 }
