@@ -87,7 +87,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         padding: 0 28px;
-        gap: 1.6rem;
+        gap: 1.5rem;
         transition: all 0.4s linear;
     }
     
@@ -101,7 +101,7 @@
     }
     
     .navbar__list.active {
-        height: 47vh;
+        height: 268px;
         z-index: 9999;
         overflow-y: auto;
         padding-top: 26px;

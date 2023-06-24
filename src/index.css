@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+*::selection {
+    background-color: #EA680B;
+    color: #fff;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -41,8 +46,13 @@ li {
     /* padding-top: 76px; */
 }
 
+
 @media all and (max-width : 700px) {
     * {
         cursor: default;
+    }
+
+    p {
+        pointer-events: none;
     }
 }
