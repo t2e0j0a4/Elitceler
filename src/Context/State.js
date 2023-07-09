@@ -4,7 +4,7 @@ import myContext from "./Context";
 
 const State = (props) => {
 
-    const API = "https://elitceler-server-e803.onrender.com";
+    const API = "https://fine-tuna-turtleneck-shirt.cyclic.app";
 
     // Contact Us API Endpoint
 
