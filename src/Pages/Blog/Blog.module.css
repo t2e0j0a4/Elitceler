@@ -181,7 +181,7 @@
 }
 
 .blog__details p {
-    font-family: var(--quicksand);
+    font-family: var(--poppins);
     font-weight: 400;
     font-size: 17px;
     line-height: 24px;
@@ -207,7 +207,7 @@
 }
 
 .blog__desc p {
-    font-family: var(--quicksand);
+    font-family: var(--poppins);
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;

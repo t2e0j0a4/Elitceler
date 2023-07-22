@@ -44,7 +44,7 @@
 }
 
 .list__item a {
-    font-family: var(--quicksand);
+    font-family: var(--poppins);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;

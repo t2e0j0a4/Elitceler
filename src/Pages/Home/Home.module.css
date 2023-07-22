@@ -58,7 +58,7 @@
 .section1__side1 p {
     width: 100%;
     margin: auto;
-    font-family: var(--quicksand);
+    font-family: var(--poppins);
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -71,7 +71,7 @@
     align-items: center;
     background: #EA680B;
     border-radius: 4px;
-    font-family: var(--quicksand);
+    font-family: var(--poppins);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -151,7 +151,7 @@
 }
 
 .side1__head p {
-    font-family: var(--quicksand);
+    font-family: var(--poppins);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -160,7 +160,7 @@
 }
 
 .section2__side1 > p {
-    font-family: var(--quicksand);
+    font-family: var(--poppins);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -201,7 +201,7 @@
 }
 
 .home__section3 p:nth-child(2) {
-    font-family: var(--quicksand);
+    font-family: var(--poppins);
     font-style: normal;
     text-align: center;
     width: 50%;
@@ -212,7 +212,7 @@
 }
 
 .home__section3 p:nth-child(3) {
-    font-family: var(--quicksand);
+    font-family: var(--poppins);
     font-style: normal;
     text-align: center;
     font-weight: 400;
@@ -296,7 +296,7 @@
 .whyus__box p {
     width: 70%;
     text-align: center;
-    font-family: var(--quicksand);
+    font-family: var(--poppins);
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -413,7 +413,7 @@
 .section6__head p {
     width: 60%;
     text-align: center;
-    font-family: var(--quicksand);
+    font-family: var(--poppins);
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -514,7 +514,7 @@
 
 .section7__head p {
     text-align: center;
-    font-family: var(--quicksand);
+    font-family: var(--poppins);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -564,7 +564,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
-    font-family: var(--quicksand);
+    font-family: var(--poppins);
     color: #3B3951;
 }
 
@@ -575,7 +575,7 @@
     outline: none;
     padding: 10px 12px;
     background-color: transparent;
-    font-family: var(--quicksand);
+    font-family: var(--poppins);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -602,7 +602,7 @@
     border-radius: 4px;
     padding: 10px 12px;
     background-color: transparent;
-    font-family: var(--quicksand);
+    font-family: var(--poppins);
     font-size: 15px;
 }
 
@@ -613,7 +613,7 @@
 .contact__box > button {
     background: #EA680B;
     border-radius: 4px;
-    font-family: var(--quicksand);
+    font-family: var(--poppins);
     padding: 14px 16px;
     border: none;
     color: #FFFFFF;
@@ -644,7 +644,7 @@
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    font-family: var(--quicksand);
+    font-family: var(--poppins);
     font-style: normal;
     word-break: break-all;
     font-weight: 500;
@@ -663,14 +663,14 @@
 }
 
 .response__gmsg {
-    font-family: var(--quicksand);
+    font-family: var(--poppins);
     font-size: 17px;
     color: green;
     text-align: left;
 }
 
 .response__bmsg {
-    font-family: var(--quicksand);
+    font-family: var(--poppins);
     font-size: 17px;
     color: rgb(255, 45, 45);
     text-align: left;

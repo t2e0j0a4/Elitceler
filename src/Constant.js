@@ -247,6 +247,32 @@ const teamMembers = [
             }
         ]
     },
+    {
+        id : 7,
+        name : 'Shakir Farhan',
+        role : 'Fullstack Web Dev',
+        imageSrc: Dummy,
+        links : [
+            {
+                id : 1,
+                name : 'Twitter',
+                logo : 'logo-twitter',
+                link : ''
+            },
+            {
+                id : 2,
+                name : 'Instagram',
+                logo : 'logo-instagram',
+                link : ''
+            },
+            {
+                id : 3,
+                name : 'LinkedIn',
+                logo : 'logo-linkedin',
+                link : ''
+            }
+        ]
+    },
     
 ]
 
