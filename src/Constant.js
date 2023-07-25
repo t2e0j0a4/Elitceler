@@ -91,216 +91,173 @@ const technologies = [
 ]
 
 const teamMembers = [
-    {
-        id : 1,
-        name : 'SaiKrishna Alishala',
-        role : 'Founder & CEO',
-        imageSrc: SaiKrishna,
-        links : [
-            {
-                id : 1,
-                name : 'Twitter',
-                logo : 'logo-twitter',
-                link : ''
-            },
-            {
-                id : 2,
-                name : 'Instagram',
-                logo : 'logo-instagram',
-                link : ''
-            },
-            {
-                id : 3,
-                name : 'LinkedIn',
-                logo : 'logo-linkedin',
-                link : ''
-            }
-        ]
-    },
-    {
-        id : 2,
-        name : 'Navya Sri Alishala',
-        role : 'Co-Founder',
-        imageSrc: NavyaSri,
-        links : [
-            {
-                id : 1,
-                name : 'Twitter',
-                logo : 'logo-twitter',
-                link : ''
-            },
-            {
-                id : 2,
-                name : 'Instagram',
-                logo : 'logo-instagram',
-                link : ''
-            },
-            {
-                id : 3,
-                name : 'LinkedIn',
-                logo : 'logo-linkedin',
-                link : ''
-            }
-        ]
-    },
-    {
-        id : 3,
-        name : 'Amrutha Varshini',
-        role : 'Director & COO',
-        imageSrc: Amrutha,
-        links : [
-            {
-                id : 1,
-                name : 'Twitter',
-                logo : 'logo-twitter',
-                link : ''
-            },
-            {
-                id : 2,
-                name : 'Instagram',
-                logo : 'logo-instagram',
-                link : ''
-            },
-            {
-                id : 3,
-                name : 'LinkedIn',
-                logo : 'logo-linkedin',
-                link : ''
-            }
-        ]
-    },
-    {
-        id : 4,
-        name : 'Pranati Tantravahi',
-        role : 'Lead UX/UI Designer',
-        imageSrc: Pranathi,
-        links : [
-            {
-                id : 1,
-                name : 'LinkedIn',
-                logo : 'logo-linkedin',
-                link : ''
-            },
-            {
-                id : 2,
-                name : 'Instagram',
-                logo : 'logo-instagram',
-                link : ''
-            },
-            {
-                id : 3,
-                name : 'Medium',
-                logo : 'logo-medium',
-                link : ''
-            }
-        ]
-    },
-    {
-        id : 5,
-        name : 'Hemanth Vakati',
-        role : 'UX/UI Designer',
-        imageSrc: Hemanth,
-        links : [
-            {
-                id : 1,
-                name : 'Twitter',
-                logo : 'logo-twitter',
-                link : ''
-            },
-            {
-                id : 2,
-                name : 'Instagram',
-                logo : 'logo-instagram',
-                link : ''
-            },
-            {
-                id : 3,
-                name : 'LinkedIn',
-                logo : 'logo-linkedin',
-                link : ''
-            }
-        ]
-    },
-    {
-        id : 6,
-        name : 'Nagateja V',
-        role : 'Frontend Web Dev',
-        imageSrc: Dummy,
-        links : [
-            {
-                id : 1,
-                name : 'Twitter',
-                logo : 'logo-twitter',
-                link : ''
-            },
-            {
-                id : 2,
-                name : 'Instagram',
-                logo : 'logo-instagram',
-                link : ''
-            },
-            {
-                id : 3,
-                name : 'LinkedIn',
-                logo : 'logo-linkedin',
-                link : ''
-            }
-        ]
-    },
-    {
-        id : 7,
-        name : 'Shakir Farhan',
-        role : 'Fullstack Web Dev',
-        imageSrc: Dummy,
-        links : [
-            {
-                id : 1,
-                name : 'Twitter',
-                logo : 'logo-twitter',
-                link : ''
-            },
-            {
-                id : 2,
-                name : 'Instagram',
-                logo : 'logo-instagram',
-                link : ''
-            },
-            {
-                id : 3,
-                name : 'LinkedIn',
-                logo : 'logo-linkedin',
-                link : ''
-            }
-        ]
-    },
-    {
-        id : 8,
-        name : 'Cynthia Konar',
-        role : 'Fullstack Developer',
-        imageSrc: Dummy,
-        links : [
-            {
-                id : 1,
-                name : 'Twitter',
-                logo : 'logo-twitter',
-                link : ''
-            },
-            {
-                id : 2,
-                name : 'Instagram',
-                logo : 'logo-instagram',
-                link : ''
-            },
-            {
-                id : 3,
-                name : 'LinkedIn',
-                logo : 'logo-linkedin',
-                link : ''
-            }
-        ]
-    },
-    
-]
+  {
+    id: 1,
+    name: "SaiKrishna Alishala",
+    role: "Founder & CEO",
+    imageSrc: SaiKrishna,
+    links: [
+      {
+        id: 1,
+        name: "Twitter",
+        logo: "logo-twitter",
+        link: "https://twitter.com/SaiAlishala",
+      },
+      {
+        id: 2,
+        name: "Instagram",
+        logo: "logo-instagram",
+        link: "https://instagram.com/saikrishna.alishala",
+      },
+      {
+        id: 3,
+        name: "LinkedIn",
+        logo: "logo-linkedin",
+        link: "https://www.linkedin.com/in/sai-krishna-alishala-097750199",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Navya Sri Alishala",
+    role: "Co-Founder",
+    imageSrc: NavyaSri,
+    links: [
+      {
+        id: 1,
+        name: "Instagram",
+        logo: "logo-instagram",
+        link: "https://instagram.com/navya_alishala",
+      },
+      {
+        id: 2,
+        name: "LinkedIn",
+        logo: "logo-linkedin",
+        link: "https://www.linkedin.com/in/navya-alishala",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Amrutha Varshini",
+    role: "Director & COO",
+    imageSrc: Amrutha,
+    links: [
+      {
+        id: 1,
+        name: "Instagram",
+        logo: "logo-instagram",
+        link: "https://instagram.com/amrutha.warshini",
+      },
+      {
+        id: 2,
+        name: "LinkedIn",
+        logo: "logo-linkedin",
+        link: "https://www.linkedin.com/in/amrutha-varshini-m-167094223",
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Pranati Tantravahi",
+    role: "Lead UX/UI Designer",
+    imageSrc: Pranathi,
+    links: [
+      {
+        id: 1,
+        name: "LinkedIn",
+        logo: "logo-linkedin",
+        link: "https://www.linkedin.com/in/pranati-tantravahi-201135226",
+      },
+      {
+        id: 2,
+        name: "Instagram",
+        logo: "logo-instagram",
+        link: "https://instagram.com/pranativahi_9",
+      },
+      {
+        id: 3,
+        name: "Medium",
+        logo: "logo-medium",
+        link: "https://medium.com/@pranativahi9",
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: "Hemanth Vakati",
+    role: "UX/UI Designer",
+    imageSrc: Hemanth,
+    links: [
+      {
+        id: 1,
+        name: "Instagram",
+        logo: "logo-instagram",
+        link: "https://instagram.com/vjhemanth_7/",
+      },
+      {
+        id: 2,
+        name: "LinkedIn",
+        logo: "logo-linkedin",
+        link: "https://www.linkedin.com/in/hemanth-kumar-reddy-vakati-915115198",
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: "Nagateja V",
+    role: "Frontend Web Dev",
+    imageSrc: Dummy,
+    links: [
+      {
+        id: 2,
+        name: "Instagram",
+        logo: "logo-instagram",
+        link: "https://www.instagram.com/t2e0j0a4/",
+      },
+      {
+        id: 3,
+        name: "LinkedIn",
+        logo: "logo-linkedin",
+        link: "https://www.linkedin.com/in/t2e0j0a4/",
+      },
+    ],
+  },
+  {
+    id: 7,
+    name: "Shakir Farhan",
+    role: "Fullstack Web Dev",
+    imageSrc: Dummy,
+    links: [
+      {
+        id: 1,
+        name: "Instagram",
+        logo: "logo-instagram",
+        link: "https://www.instagram.com/shak1rfarhan/",
+      },
+      {
+        id: 2,
+        name: "LinkedIn",
+        logo: "logo-linkedin",
+        link: "https://www.linkedin.com/in/shak1rfarhan",
+      },
+    ],
+  },
+  {
+    id: 8,
+    name: "Cynthia Konar",
+    role: "Fullstack Developer",
+    imageSrc: Dummy,
+    links: [
+      {
+        id: 1,
+        name: "LinkedIn",
+        logo: "logo-linkedin",
+        link: "https://www.linkedin.com/in/cynthia-konar-649b5721b",
+      },
+    ],
+  },
+];
 
 const projects = {
 
