@@ -2,7 +2,7 @@ import React , {useContext} from 'react'
 import {whyUs,techPartners, technologies} from "../../Constant";
 import styles from "./Home.module.css";
 import Hero1 from "../../Assets/Hero1.svg";
-import Hero2 from "../../Assets/Hero2.png";
+import About from "../../Assets/About.png";
 import myContext from '../../Context/Context';
 
 const Home = () => {
@@ -47,7 +47,7 @@ const Home = () => {
             <p>ElitCeler Technologies is a Product Based Company that helps companies, various tech startups and ventures by providing Software as a service (or SaaS - delivering applications over the Internet). We are a Web Application Development Company based in India covering all services from Agriculture to the Tourism sectors. Our core objective is to develop top-notch and magnificent products for the Health Care Sector.</p>
           </div>
           <div className={section2__side2}>
-            <img src={Hero2} alt="About" />
+            <img src={About} alt="About" />
           </div>
         </div>
       </div>
