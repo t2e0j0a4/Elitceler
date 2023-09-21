@@ -6,7 +6,6 @@ import edodwaja from "./Assets/Edodwaja.svg";
 import SaiKrishna from "./Assets/SaiKrishna.jpg";
 import NavyaSri from "./Assets/NavyaSri.jpg";
 import Amrutha from "./Assets/Amrutha.svg";
-import Pranathi from "./Assets/Pranathi.svg";
 import Hemanth from "./Assets/Hemanth.png";
 import Dummy from "./Assets/Dummy.svg";
 
