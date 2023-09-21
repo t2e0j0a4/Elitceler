@@ -159,32 +159,6 @@ const teamMembers = [
   },
   {
     id: 4,
-    name: "Pranati Tantravahi",
-    role: "Lead UX/UI Designer",
-    imageSrc: Pranathi,
-    links: [
-      {
-        id: 1,
-        name: "LinkedIn",
-        logo: "logo-linkedin",
-        link: "https://www.linkedin.com/in/pranati-tantravahi-201135226",
-      },
-      {
-        id: 2,
-        name: "Instagram",
-        logo: "logo-instagram",
-        link: "https://instagram.com/pranativahi_9",
-      },
-      {
-        id: 3,
-        name: "Medium",
-        logo: "logo-medium",
-        link: "https://medium.com/@pranativahi9",
-      },
-    ],
-  },
-  {
-    id: 5,
     name: "Hemanth Vakati",
     role: "UX/UI Designer",
     imageSrc: Hemanth,
@@ -204,7 +178,7 @@ const teamMembers = [
     ],
   },
   {
-    id: 6,
+    id: 5,
     name: "Nagateja V",
     role: "Frontend Web Dev",
     imageSrc: Dummy,
@@ -224,7 +198,7 @@ const teamMembers = [
     ],
   },
   {
-    id: 7,
+    id: 6,
     name: "Shakir Farhan",
     role: "Fullstack Web Dev",
     imageSrc: Dummy,
@@ -244,7 +218,7 @@ const teamMembers = [
     ],
   },
   {
-    id: 8,
+    id: 7,
     name: "Cynthia Konar",
     role: "Fullstack Developer",
     imageSrc: Dummy,
