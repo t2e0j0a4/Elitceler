@@ -1,6 +1,5 @@
 // Tech Partners Logos
 import kalative from "./Assets/Kalative.svg";
-import edodwaja from "./Assets/Edodwaja.svg";
 
 // Team Members
 import SaiKrishna from "./Assets/SaiKrishna.jpg";
