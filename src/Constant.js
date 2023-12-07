@@ -44,10 +44,6 @@ const techPartners = [
     {
         id : 1,
         partner :kalative
-    },
-    {
-        id : 2,
-        partner : edodwaja
     }
 ]
 
