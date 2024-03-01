@@ -184,8 +184,8 @@ const Home = () => {
 
             <div className={contact__details}>
               <a href="mailto:saikrishna.alishala@askgroup.org.in"><ion-icon name="mail-outline"></ion-icon><span>saikrishna.alishala@elitceler.com</span></a>
-              <a href="tel:7897892565"><ion-icon name="call-outline"></ion-icon><span>(+91) 7897892565</span></a>
-              <p><ion-icon name="pin-outline"></ion-icon><span>Nacharam, Hyderabad, Telangana, 500076</span></p>
+              <a href="tel:7075202565"><ion-icon name="call-outline"></ion-icon><span>(+91) 7075202565</span></a>
+              <p><ion-icon name="pin-outline"></ion-icon><span>T-hub Phase-II, Hyderabad, Telangana, 500081</span></p>
             </div>
 
           </div>
