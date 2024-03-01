@@ -3,7 +3,7 @@ import {Routes, Route, useLocation, useNavigate} from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import GoTop from './Components/GoTop/GoTop';
-import {Home, Team, Blogs, Blog, NotFound, CreateBlogs} from "./Pages";
+import {Home, Team, Blogs, Blog, NotFound, CreateBlogs, Projects} from "./Pages";
 import State from './Context/State';
 
 const App = () => {
@@ -61,6 +61,7 @@ const App = () => {
             <Route exact path="/blogs" element={<Blogs />} />
             <Route exact path="/blog/:id" element={<Blog />} />
             <Route exact path="/new" element={<CreateBlogs />} />
+            <Route exact path="/projects" element={<Projects />} />
           </Routes>
         </div>
         <Footer />
