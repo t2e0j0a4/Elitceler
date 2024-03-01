@@ -49,6 +49,9 @@ const Navbar = () => {
             <Link className={`${location.pathname === '/blogs' && selected}`} to="/blogs">Blogs</Link>
           </li>
           <li className={list__item} onClick={() => {setMenuToggle(false)}} >
+            <Link className={`${location.pathname === '/projects' && selected}`} to="/projects">Projects</Link>
+          </li>
+          <li className={list__item} onClick={() => {setMenuToggle(false)}} >
             <a onClick={() => {navigate('/');}} className={`${location.hash === '#contact' && selected}`} href="#contact">Contact Us</a>
           </li>
       </ul>
