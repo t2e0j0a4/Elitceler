@@ -104,7 +104,7 @@
         height: 268px;
         z-index: 9999;
         overflow-y: auto;
-        padding-top: 26px;
+        padding-top: 8px;
     }
 
     .menu__smallscreen {
