@@ -28,7 +28,13 @@ const Team = () => {
                   <img src={member.imageSrc} alt={member.name} />
                   <div className={member__head}>
                     <h3>{member.name}</h3>
-                    <p>{member.role}</p>
+                    {
+                      member.role.includes('Director / Advisor') ? (
+                        <p>Director / Advisor <br/> UK & EMEA</p>
+                      ): (
+                        <p>{member.role}</p>
+                      )
+                    }
                   </div>
                   <div className={member__socials}>
                     {
