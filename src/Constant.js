@@ -6,6 +6,7 @@ import SaiKrishna from "./Assets/SaiKrishna.jpg";
 import NavyaSri from "./Assets/NavyaSri.jpg";
 import Amrutha from "./Assets/Amrutha.svg";
 import Hemanth from "./Assets/Hemanth.png";
+import Sandeep from "./Assets/Sandeep.png";
 import Dummy from "./Assets/Dummy.svg";
 
 // Projects
@@ -153,6 +154,26 @@ const teamMembers = [
   },
   {
     id: 4,
+    name: "Sandeep Nampally",
+    role: "Director / Advisor UK & EMEA",
+    imageSrc: Sandeep,
+    links: [
+      {
+        id: 1,
+        name: "Instagram",
+        logo: "logo-instagram",
+        link: "https://www.instagram.com/saandipmytreya/?hl=en",
+      },
+      {
+        id: 2,
+        name: "LinkedIn",
+        logo: "logo-linkedin",
+        link: "https://www.linkedin.com/in/sandeep-nampally-53a56a10/",
+      },
+    ],
+  },
+  {
+    id: 5,
     name: "Hemanth Vakati",
     role: "UX/UI Designer",
     imageSrc: Hemanth,
@@ -172,7 +193,7 @@ const teamMembers = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     name: "Nagateja V",
     role: "Frontend Web Dev",
     imageSrc: Dummy,
@@ -192,7 +213,7 @@ const teamMembers = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     name: "Shakir Farhan",
     role: "Fullstack Web Dev",
     imageSrc: Dummy,
@@ -212,7 +233,7 @@ const teamMembers = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     name: "Cynthia Konar",
     role: "Fullstack Developer",
     imageSrc: Dummy,
